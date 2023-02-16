@@ -28,7 +28,6 @@ function ContextProvider(props) {
     function removeFromCart(id) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
-    console.log(cartItems)
 
     return (
         <Context.Provider value={{allPhotos, toggleFavorite, addToCart, cartItems, removeFromCart}}>
